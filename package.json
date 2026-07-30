@@ -1,0 +1,16 @@
+{
+  "name": "vodafone-summer-runner",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Vodafone Oman Summer Runner — promotional browser game (Phaser 3)",
+  "scripts": {
+    "start": "npx --yes serve -l 5173 ."
+  },
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer-core": "^22.15.0"
+  }
+}
