@@ -5,3 +5,7 @@ node_modules/
 _tmp_*.html
 .env
 .env.*
+*.pdf
+*.xlsx
+*.xls
+qr-output/
