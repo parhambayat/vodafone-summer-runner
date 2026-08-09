@@ -4,16 +4,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="theme-color" content="#4EC8E8">
+  <meta name="theme-color" content="#0a0a0a">
   <meta name="mobile-web-app-capable" content="yes">
   <title>Vodafone Summer Runner</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/crt-lock.css">
 </head>
 <body>
-  <div id="game-container"></div>
+  <!-- Full-screen lock sticker: CRT TV over the game. Does not alter game code. -->
+  <div id="crt-lock" role="dialog" aria-modal="true" aria-label="Game locked">
+    <div class="crt-room">
+      <div class="crt-wall-glow" aria-hidden="true"></div>
+      <div class="crt-set">
+        <div class="crt-bezel">
+          <div class="crt-brand-top" aria-hidden="true">CRT</div>
+          <div class="crt-screen-frame">
+            <div id="game-container"></div>
+            <div class="crt-glass" aria-hidden="true"></div>
+            <div class="crt-scanlines" aria-hidden="true"></div>
+            <div class="crt-chromatic" aria-hidden="true"></div>
+            <div class="crt-message">
+              <p>To resume the game,<br>please contact its creator.</p>
+            </div>
+            <div class="crt-blocker" aria-hidden="true"></div>
+          </div>
+          <div class="crt-brand-bottom" aria-hidden="true">LOCKED</div>
+        </div>
+      </div>
+      <div class="crt-cabinet" aria-hidden="true">
+        <div class="crt-cables"></div>
+      </div>
+    </div>
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/phaser@3.60.0/dist/phaser.min.js"></script>
   <script type="module" src="src/main.js?v=6"></script>
+  <script src="js/crt-lock.js"></script>
 </body>
 </html>
