@@ -187,13 +187,10 @@
 .crt-message p {
   margin: 0;
   max-width: 18em;
-  padding: 0.85em 0.6em;
   font-family: "Press Start 2P", monospace;
   font-size: clamp(9px, 2.2vw, 14px);
   line-height: 1.85;
   color: #f0fff0;
-  background: rgba(0, 18, 8, 0.42);
-  border-radius: 4px;
   text-shadow:
     0 0 6px rgba(120, 255, 160, 0.95),
     0 0 18px rgba(80, 220, 120, 0.75),
